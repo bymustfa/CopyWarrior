@@ -1,0 +1,55 @@
+body{
+    width: 250px;
+    max-height: 700px;
+}
+
+#listContainer{
+    max-height: 500px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+.copyItem{
+    position: relative;
+}
+
+.copyIcon{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+.detailIcon{
+    position: absolute;
+    right: 3px;
+    bootm: 3px;
+}
+.copyIcon:hover,
+.detailIcon:hover{
+    background: #1A1A1A;
+    cursor: pointer;
+    color: #fff;
+}
+
+#copiesDelete{
+    cursor: pointer;
+}
+#copiesDelete:hover{
+    color: #1a82ae;
+}
+
+#listContainer::-webkit-scrollbar ,
+::-webkit-scrollbar {
+    width: 8px;
+}
+#listContainer::-webkit-scrollbar-track ,
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#listContainer::-webkit-scrollbar-thumb  ,
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+#listContainer::-webkit-scrollbar-thumb:hover ,
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

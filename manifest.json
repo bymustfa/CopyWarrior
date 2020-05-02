@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Copy Warrior",
+	"description": "CopyWarrior gelişmiş bir kopyala / yapıştır aracıdır.",
+	"version": "1.0",
+	"permissions": ["contextMenus","tabs", "http://*/*", "https://*/*", "storage"],
+	"background": {
+		"scripts": ["assets/js/jquery-3.5.0.min.js",  "copy/copywarrior.js", "./main.js" ]
+	},
+	"browser_action" : {
+		"default_popup" : "popup.html"
+	},
+	"icons" : {
+		"16" : "./assets/icons/16x.png",
+		"24" : "./assets/icons/24x.png",
+		"32" : "./assets/icons/32x.png",
+		"64" : "./assets/icons/64x.png",
+		"128" : "./assets/icons/128x.png",
+		"256" : "./assets/icons/256x.png"
+	}
+}
