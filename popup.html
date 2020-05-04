@@ -4,50 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/dark-mode.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 </head>
-<body class="p-2">
+<body class="p-2 ">
 
 <div class="container-fluid">
-    <h5 class="text-center"> <b>Copy Warrior</b> </h5>
+    <h5 class="text-center"><b>Copy Warrior</b></h5>
     <hr>
-    <div>
-        <span id="copiesDelete" class="small"><i class="far fa-trash-alt text-danger"></i> Tüm Kopyaları Temizle</span>
+    <div id="copiesDeleteContainer">
+        <span id="copiesDelete" class="small"><i class="far fa-trash-alt text-danger"></i> <span tkey="allCopiesDelete">Tüm Kopyaları Temizle</span></span>
         <hr>
     </div>
-    <div class="list-group" id="listContainer">
-        <li class="list-group-item list-group-item-action copyItem my-2">
-            <span class="copyIcon p-1 border"  data-toggle="tooltip" data-placement="left" title="Yazıyı Kopyala"><i class="far fa-copy"></i></span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing eli...
-            <span class="detailIcon p-1 border"  data-toggle="tooltip" data-placement="left" title="Detaylar"><i class="fas fa-info-circle"></i></span>
-        </li>
+    <div class="list-group" id="listContainer"></div>
+    <div class="list-group" id="itemDetailContainer"></div>
+    <hr>
 
-
+    <div id="allCopiesShowContainer" class="text-center">
+        <a href="./allCopies.html" target="_blank">
+            <span>Tüm Kopyaları Gör <i class="fas fa-long-arrow-alt-right"></i> </span>
+        </a>
+        <hr>
     </div>
-    <hr>
-    <div class="text-center"><span >Tüm Kopyaları Gör <i class="fas fa-long-arrow-alt-right"></i> </span></div>
-    <hr>
+
     <div class="row">
-        <div class="col-6">
-            <a href="./settings.html" target="_blank"><i class="fas fa-cogs"></i> <span class="small">Ayarlar</span> </a>
+        <div class="col-5 small border-right">
+            <a href="./settings.html" target="_blank"><i class="fas fa-cogs"></i> <span class="">Ayarlar</span>
+            </a>
         </div>
-        <div class="col-6 small">
+        <div class="col-7 small">
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="customSwitch1" >
-                <label class="custom-control-label small" for="customSwitch1">Karanlık Mod</label>
+                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                <label class="custom-control-label  " for="darkSwitch">Karanlık Mod</label>
             </div>
 
         </div>
     </div>
+    <br>
 </div>
 
 <script src="./assets/js/jquery-3.5.0.min.js"></script>
 <script src="./assets/js/all.js"></script>
 <script src="./assets/js/popper.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/dark-mode-switch.js"></script>
 <script src="./assets/js/custom.js"></script>
 </body>
 </html>

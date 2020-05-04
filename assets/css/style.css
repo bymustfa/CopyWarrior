@@ -1,55 +1,69 @@
-body{
-    width: 250px;
-    max-height: 700px;
+body {
+    width: 300px;
+    max-height: 565px;
 }
 
-#listContainer{
-    max-height: 500px;
-    overflow-x:scroll;
-    overflow-y: hidden;
+#listContainer {
+    max-height: 350px !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.copyItem{
+#copiesDeleteContainer,
+#allCopiesShowContainer,
+#itemDetailContainer{
+    display: none;
+}
+
+
+
+.copyItem {
     position: relative;
 }
 
-.copyIcon{
+.copyIcon {
     position: absolute;
-    right: 3px;
-    top: 3px;
+    right: 1px;
+    top: 1px;
 }
-.detailIcon{
+
+.detailIcon {
     position: absolute;
-    right: 3px;
-    bootm: 3px;
+    left: 1px;
+    top: 1px;
 }
+
 .copyIcon:hover,
-.detailIcon:hover{
+.detailIcon:hover {
     background: #1A1A1A;
     cursor: pointer;
     color: #fff;
 }
 
-#copiesDelete{
+#copiesDelete {
     cursor: pointer;
 }
-#copiesDelete:hover{
+
+#copiesDelete:hover {
     color: #1a82ae;
 }
 
-#listContainer::-webkit-scrollbar ,
+#listContainer::-webkit-scrollbar,
 ::-webkit-scrollbar {
     width: 8px;
 }
-#listContainer::-webkit-scrollbar-track ,
+
+#listContainer::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-#listContainer::-webkit-scrollbar-thumb  ,
+
+#listContainer::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
-#listContainer::-webkit-scrollbar-thumb:hover ,
+
+#listContainer::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
